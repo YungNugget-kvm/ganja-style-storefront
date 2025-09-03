@@ -2,62 +2,12 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { InfoSection } from "@/components/InfoSection";
 import { ProductSection } from "@/components/ProductSection";
-import thcaFlower1 from "@/assets/thca-flower-1.jpg";
-import thcaFlower2 from "@/assets/thca-flower-2.jpg";
 import vapePen1 from "@/assets/vape-pen-1.jpg";
-import gummies1 from "@/assets/gummies-1.jpg";
-import tincture1 from "@/assets/tincture-1.jpg";
 
 const Index = () => {
-  const thcaFlowerProducts = [
-    {
-      id: 1,
-      name: "Runtz THCA Flower",
-      image: thcaFlower1,
-      rating: 5,
-      reviewCount: 39,
-      price: "$35.00",
-      originalPrice: "$89.00"
-    },
-    {
-      id: 2,
-      name: "Gush Mints Smalls THCA Flower",
-      image: thcaFlower2,
-      rating: 5,
-      reviewCount: 9,
-      price: "$39.00"
-    },
-    {
-      id: 3,
-      name: "Lemon Cherry Gelato THCA Flower",
-      image: thcaFlower1,
-      rating: 5,
-      reviewCount: 9,
-      price: "$29.00",
-      originalPrice: "$79.00"
-    },
-    {
-      id: 4,
-      name: "Banana Kush THCA Flower",
-      image: thcaFlower2,
-      rating: 5,
-      reviewCount: 5,
-      price: "$29.00",
-      originalPrice: "$79.00"
-    },
-    {
-      id: 5,
-      name: "GovernMint Oasis Smalls THCA Flower",
-      image: thcaFlower1,
-      rating: 5,
-      reviewCount: 3,
-      price: "$39.00"
-    }
-  ];
-
   const vapeProducts = [
     {
-      id: 6,
+      id: 1,
       name: "Premium CBD Vape Pen",
       image: vapePen1,
       rating: 5,
@@ -66,39 +16,61 @@ const Index = () => {
       originalPrice: "$69.99"
     },
     {
-      id: 7,
-      name: "Delta-8 Cartridge",
+      id: 2,
+      name: "Delta-8 THC Cartridge",
       image: vapePen1,
       rating: 4,
       reviewCount: 18,
       price: "$39.99"
     },
     {
-      id: 8,
+      id: 3,
       name: "Full Spectrum Vape Cart",
       image: vapePen1,
       rating: 5,
       reviewCount: 31,
       price: "$44.99"
-    }
-  ];
-
-  const edibleProducts = [
-    {
-      id: 9,
-      name: "Mixed Berry Gummies",
-      image: gummies1,
-      rating: 5,
-      reviewCount: 67,
-      price: "$24.99"
     },
     {
-      id: 10,
-      name: "Full Spectrum Tincture",
-      image: tincture1,
+      id: 4,
+      name: "Live Resin Disposable",
+      image: vapePen1,
       rating: 5,
-      reviewCount: 45,
-      price: "$59.99"
+      reviewCount: 42,
+      price: "$29.99",
+      originalPrice: "$39.99"
+    },
+    {
+      id: 5,
+      name: "HHC Vape Cartridge",
+      image: vapePen1,
+      rating: 4,
+      reviewCount: 15,
+      price: "$34.99"
+    },
+    {
+      id: 6,
+      name: "THC-O Disposable Vape",
+      image: vapePen1,
+      rating: 5,
+      reviewCount: 28,
+      price: "$54.99"
+    },
+    {
+      id: 7,
+      name: "Delta-10 Vape Cart",
+      image: vapePen1,
+      rating: 4,
+      reviewCount: 12,
+      price: "$42.99"
+    },
+    {
+      id: 8,
+      name: "Hybrid Strain Disposable",
+      image: vapePen1,
+      rating: 5,
+      reviewCount: 36,
+      price: "$32.99"
     }
   ];
 
@@ -109,19 +81,8 @@ const Index = () => {
       <InfoSection />
       
       <ProductSection 
-        title="THCA Flower" 
-        products={thcaFlowerProducts}
-      />
-      
-      <ProductSection 
-        title="Vape Products" 
+        title="Premium Vape Products" 
         products={vapeProducts}
-      />
-      
-      <ProductSection 
-        title="Edibles & Wellness" 
-        products={edibleProducts}
-        showMore={false}
       />
     </div>
   );
